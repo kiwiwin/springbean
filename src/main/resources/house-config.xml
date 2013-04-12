@@ -9,7 +9,7 @@
 
     <bean id="house" class="org.kiwi.springbean.House">
         <constructor-arg ref="normalLevel"/>
-        <constructor-arg value="100"/>
+        <property name="originalPrice" value="80"/>
     </bean>
 
 </beans>

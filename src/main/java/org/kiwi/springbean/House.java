@@ -4,12 +4,15 @@ public class House {
     private HouseLevel level;
     private int originalPrice;
 
-    public House(HouseLevel level, int originalPrice) {
+    public House(HouseLevel level) {
         this.level = level;
-        this.originalPrice = originalPrice;
     }
 
     public int getPrice() {
         return level.getPrice(originalPrice);
+    }
+
+    public void setOriginalPrice(int originalPrice) {
+        this.originalPrice = originalPrice;
     }
 }
