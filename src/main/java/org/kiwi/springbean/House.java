@@ -4,7 +4,8 @@ public class House {
     private HouseLevel level;
     private int originalPrice;
 
-    public House() {
+    public House(HouseLevel level) {
+        this.level = level;
     }
 
     public int getPrice() {
