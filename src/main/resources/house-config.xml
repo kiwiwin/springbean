@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="normalLevel" class="org.kiwi.springbean.NormalHouseLevel"/>
+    <bean id="LuxuryLevel" class="org.kiwi.springbean.LuxuryHouseLevel"/>
+
+    <bean id="house" class="org.kiwi.springbean.House">
+        <constructor-arg ref="normalLevel"/>
+        <constructor-arg value="100"/>
+    </bean>
+
+</beans>
