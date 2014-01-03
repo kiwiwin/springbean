@@ -8,7 +8,7 @@ public class House {
         this.level = level;
     }
 
-    public int getPrice() {
+    public int getOriginalPrice() {
         return level.getPrice(originalPrice);
     }
 
