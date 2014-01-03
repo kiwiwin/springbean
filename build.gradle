@@ -1,0 +1,19 @@
+apply plugin: "idea"
+apply plugin: "java"
+
+ext {
+    springVersion = "3.2.2.RELEASE"
+}
+
+dependencies {
+    repositories {
+        mavenCentral()
+    }
+
+    compile(
+            "org.springframework:spring-core:$springVersion",
+            "org.springframework:spring-context:$springVersion"
+    )
+
+    testCompile("junit:junit:4.11")
+}
